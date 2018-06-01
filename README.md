@@ -6,10 +6,6 @@ Here are some useful links about this subject:
 * <https://github.com/david-a-wheeler/metamath-test>
 * <http://www.cs.miami.edu/~tptp/>
 
-Parser is not finished but it works. Better error handling should be implemented. The bootstrapper was implemented first. This was used to generate two files **Parser_Bootstrap.cpp** and **Parser_Bootstrap.h**.
-These files was then used for lexing and parsing the text file **DefaultCFG.txt** to generate **Parser_DefaultCFG.cpp** and **Parser_DefaultCFG.h**. They are equal to the other two files as they should be.
-The text file is meant to represent what was done during the bootstrap. The files **Parser.cpp** and **Parser.h** is meant to be used stand alone together with the generated files with lookup tables.
-
 The project is created in Visual Studio 2017. Most windows specific things has been removed just in case somebody need to run it on another platform. The remaining VS2017 spesific files are:
 * MetaMath.sln - 
   Solution file for the project. The main entry point for Visual Studio 2017.
