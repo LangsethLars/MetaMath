@@ -1,0 +1,16 @@
+/*
+!/.gitignore
+!/README.md
+
+!/MetaMath.sln
+!/MetaMath.vcxproj
+!/MetaMath.vcxproj.filters
+
+!/*.cpp
+!/*.h
+
+!/src
+!/src/*
+
+!/Test
+!/Test/*
