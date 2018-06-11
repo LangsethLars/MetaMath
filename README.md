@@ -1,5 +1,7 @@
 # MetaMath
-Simple project to verify mathematical theorems in MetaMath from a text file.
+Simple project to verify mathematical theorems in MetaMath from a text file. The output from a lexer and parser generator used in this project is from **Parser** <https://github.com/LangsethLars/Parser>.
+
+The project has just started and I used some other open source existing code just a start before writing my own code.
 
 Here are some useful links about this subject:
 * <http://us.metamath.org/>

@@ -1281,7 +1281,8 @@ bool parsev()
 	return true;
 }
 
-int main(int argc, char *argv[])
+//int main(int argc, char *argv[])
+int mainOld(int argc, const char *argv)
 {
 	if (argc != 2)
 	{
@@ -1289,7 +1290,8 @@ int main(int argc, char *argv[])
 		return EXIT_FAILURE;
 	}
 
-	bool const okay(readtokens(argv[1]));
+//	bool const okay(readtokens(argv[1]));
+	bool const okay(readtokens(argv));
 	if (!okay)
 		return EXIT_FAILURE;
 
@@ -1350,4 +1352,17 @@ int main(int argc, char *argv[])
 	std::cout << "Finished" << std::endl;
 
 	return 0;
+}
+
+
+int main(int argc, char *argv[])
+{
+	int rv = 0;
+
+	if (argc == 2)
+		rv = mainOld(2, argv[1]);
+	else
+		rv = mainOld(2, "C:\\GitHub\\LangsethLars\\MetaMath\\Test\\anatomy.mm");
+
+	return rv;
 }
