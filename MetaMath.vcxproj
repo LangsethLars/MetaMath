@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -115,7 +116,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\checkmm.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Parser.cpp" />
+    <ClCompile Include="src\Parser_MetaMathCFG.cpp" />
+    <ClCompile Include="src\Test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\checkmm.h" />
+    <ClInclude Include="src\Parser.h" />
+    <ClInclude Include="src\Parser_MetaMathCFG.h" />
+    <ClInclude Include="src\Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
