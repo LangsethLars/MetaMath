@@ -1,4 +1,6 @@
 # MetaMath
+**This project has been put on hold:** I wanted to have a clean separation between the lexer and the parser. This was not easy in the MetaMath language. I will therefor create my own language from scratch with a clean separation between the lexer and the parser.
+
 Simple project to verify mathematical theorems in MetaMath from a text file. The output from a lexer and parser generator used in this project is from **Parser** <https://github.com/LangsethLars/Parser>.
 
 The project has just started and I used some other existing open source code (**checkmm.cpp** by **Eric Schmidt** on <http://us.metamath.org/downloads/checkmm.cpp>) just as a start before writing my own code.
